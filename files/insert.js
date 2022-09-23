@@ -1,11 +1,11 @@
 c = new Mongo()
 db = c.getDB("admin");
-db.auth({"user":"admin","pwd":"4linux"})
-db = c.getDB("dexter");
+db.auth({"user":"admin","pwd":"admin"})
+db = c.getDB("airbnb");
 
 var arr = [];
 
-for (var i=0; i<10000; i++){
+for (var i=0; i<1000000000; i++){
   arr.push({"_id":i,"object":i,"Object2":i,"Object3":i});
 }
 print("===== Iniciando Importação de Documentos =====");
