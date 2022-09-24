@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   machines.each do |name,conf|
     config.vm.define "#{name}" do |srv|
       srv.vm.hostname = "#{name}.example.com"
-      srv.vm.network 'private_network', ip: "192.168.200.#{conf["ip"]}"
+      srv.vm.network 'private_network', ip: "191.16.20.#{conf["ip"]}"
       srv.vm.provider 'virtualbox' do |vb|
         vb.name = "#{name}"
         vb.memory = "#{conf["memory"]}"
