@@ -16,14 +16,14 @@ Esse File irá criar um servidor mongoS para rotear o mongo, dois config servers
 
 Nome         | vCPUs | Memoria RAM | IP             | S.O.         | 
 ------------ |:-----:|:-----------:|:--------------:|:------------:|
-router-mongo | 1     | 512MB       | 192.168.100.10 | Ubuntu 20.04 | 
-conf-01      | 1     | 512MB       | 192.168.100.11 | Ubuntu 20.04 | 
-conf-02      | 1     | 512MB       | 192.168.100.12 | Ubuntu 20.04 | 
-sh-pri-01    | 1     | 512MB       | 192.168.100.13 | Ubuntu 20.04 | 
-sh-pri-02    | 1     | 512MB       | 192.168.100.14 | Ubuntu 20.04 | 
-sh-seg-01    | 1     | 512MB       | 192.168.100.15 | Ubuntu 20.04 | 
-sh-seg-02    | 1     | 512MB       | 192.168.100.16 | Ubuntu 20.04 | 
-monitoring   | 1     | 512MB       | 192.168.100.254| Ubuntu 20.04 | 
+router-mongo | 1     | 512MB       | 191.16.20.10 | Ubuntu 20.04 | 
+conf-01      | 1     | 512MB       | 191.16.20.20 | Ubuntu 20.04 | 
+conf-02      | 1     | 512MB       | 191.16.20.30 | Ubuntu 20.04 | 
+sh-pri-01    | 1     | 512MB       | 191.16.20.40 | Ubuntu 20.04 | 
+sh-pri-02    | 1     | 512MB       | 191.16.20.50 | Ubuntu 20.04 | 
+sh-seg-01    | 1     | 512MB       | 191.16.20.60 | Ubuntu 20.04 | 
+sh-seg-02    | 1     | 512MB       | 191.16.20.70 | Ubuntu 20.04 | 
+monitoring   | 1     | 512MB       | 191.16.20.254| Ubuntu 20.04 | 
 
 > **Atenção** Recomendamos máquinas com 16GB.
 

@@ -10,7 +10,7 @@ machines = {
 	"sh-pri-02"    => { "ip" => "50",  "memory" => "512", "cpus" => "1" },
 	"sh-seg-01"    => { "ip" => "60",  "memory" => "512", "cpus" => "1" },
 	"sh-seg-02"    => { "ip" => "70",  "memory" => "512", "cpus" => "1" },
-	"monitor"      => { "ip" => "200", "memory" => "512", "cpus" => "1" },
+	"monitor"      => { "ip" => "254", "memory" => "512", "cpus" => "1" },
 }
 
 Vagrant.configure("2") do |config|
