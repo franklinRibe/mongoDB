@@ -5,16 +5,16 @@
 cd /tmp
 
 mkdir mongodb_exporter
-curl -OL https://github.com/percona/mongodb_exporter/releases/download/v0.11.2/mongodb_exporter-0.11.2.linux-amd64.tar.gz
-tar -xf mongodb_exporter-0.11.2.linux-amd64.tar.gz -C mongodb_exporter
+curl -OL https://github.com/percona/mongodb_exporter/releases/download/v0.34.0/mongodb_exporter-0.34.0.linux-amd64.tar.gz
+tar -xf mongodb_exporter-0.34.0.linux-amd64.tar.gz -C mongodb_exporter
 
 mkdir node_exporter
-curl -OL https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.linux-amd64.tar.gz
-tar -xf node_exporter-1.0.1.linux-amd64.tar.gz -C node_exporter
+curl -OL https://github.com/prometheus/node_exporter/releases/download/v1.4.0/node_exporter-1.4.0.linux-amd64.tar.gz
+tar -xf node_exporter-1.4.0.linux-amd64.tar.gz -C node_exporter
 
 
 cp mongodb_exporter/mongodb_exporter /usr/local/sbin/
-cp node_exporter/node_exporter-1.0.1.linux-amd64/node_exporter /usr/local/sbin/
+cp node_exporter/node_exporter-1.4.0.linux-amd64/node_exporter /usr/local/sbin/
 
 cat <<-EOF > /etc/systemd/system/mongodb_exporter.service
 [Unit]

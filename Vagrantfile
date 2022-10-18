@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
 
       if "#{name}" == "monitor" then
         srv.vm.provision "shell" do |s| 
-          s.path = "provision/install_docker.sh"
+          s.path = "provision/install_prometheus.sh"
           s.args = [config.vm.box]
         end
       end
